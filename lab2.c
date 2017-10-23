@@ -14,46 +14,46 @@ int main()
         if(0==strcmp(m_cmd,"help"))
         {
             printf("\n目前支持的命令有：help date route ifconfig ls netstat hostname exit\n");
-            }
+        }
 
         else if(0==strcmp(m_cmd,"date"))
         {
             system("date");
-            }
+        }
 
         else if(0==strcmp(m_cmd,"ifconfig"))
         {
-        system("ifconfig");
-            }
+            system("ifconfig");
+        }
 
         else if(0==strcmp(m_cmd,"route"))
         {
-        system("route");
-            }
+            system("route");
+        }
 
-    else if(0==strcmp(m_cmd,"ls"))
+        else if(0==strcmp(m_cmd,"ls"))
         {
-        system("ls");
-            }      
+            system("ls");
+        }      
 
-    else if(0==strcmp(m_cmd,"netstat"))
+        else if(0==strcmp(m_cmd,"netstat"))
         {
-        system("netstat");
-            } 
+            system("netstat");
+        } 
 
-    else if(0==strcmp(m_cmd,"hostname"))
+        else if(0==strcmp(m_cmd,"hostname"))
         {
-        system("hostname");
-            } 
+            system("hostname");
+        } 
 
-    else if(0==strcmp(m_cmd,"exit"))
+        else if(0==strcmp(m_cmd,"exit"))
         {
-        exit(0);
-            }   
+            exit(0);
+        }   
                
         else
         {
-        printf("Wrong cmd\n");
+            printf("Wrong cmd\n");
         }    
     }
 }
